@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aironaut (ESP32-S3) - Web Installer</title>
+  <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; background: #f1f5f9; color: #0f172a; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 16px; }
+    .card { background: #fff; border: 1px solid #cbd5e1; border-radius: 12px; padding: 28px; max-width: 480px; width: 100%; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,.06); }
+    h1 { color: #0284c7; margin: 0 0 8px; font-size: 1.5rem; }
+    .sub { color: #64748b; font-size: .85rem; margin: 0 0 16px; }
+    p { color: #475569; font-size: .92rem; line-height: 1.5; margin-bottom: 20px; }
+    .note { margin-top: 18px; font-size: .82rem; color: #475569; text-align: left; background: #f8fafc; padding: 12px 14px; border-radius: 8px; border: 1px solid #e2e8f0; line-height: 1.5; }
+    code { background: #e2e8f0; padding: 1px 5px; border-radius: 4px; font-size: .8rem; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>AIRONAUT ESP32-S3</h1>
+    <div class="sub">Waveshare ESP32-S3 Touch LCD 3.5 &bull; Raumluft-Messger&auml;t</div>
+    <p>Verbinde deinen Aironaut per <b>USB-C (Datenleitung)</b> mit dem PC und klicke in <b>Google Chrome</b> oder <b>Microsoft Edge</b> auf <b>Install</b>.</p>
+
+    <esp-web-install-button manifest="manifest.json"></esp-web-install-button>
+
+    <div class="note">
+      <b>Nach dem Flashen:</b><br>
+      1. Beim allerersten Start wird die interne Partition (LittleFS) formatiert &ndash; das dauert einige Sekunden.<br>
+      2. Das Ger&auml;t startet immer den eigenen Hotspot <code>Aironaut-AP</code> (Web-Dashboard unter <code>http://192.168.4.1/</code>).<br>
+      3. Heim-WLAN kannst du direkt am Touch-Display unter <b>Einstellungen &rarr; WLAN &rarr; Netzwerke suchen</b> einrichten.<br><br>
+      <b>Falls kein COM/USB-Port reagiert:</b><br>
+      <code>BOOT</code>-Taste gedr&uuml;ckt halten, kurz <code>RESET</code> dr&uuml;cken, <code>BOOT</code> loslassen und Installation erneut starten.
+    </div>
+  </div>
+</body>
+</html>
