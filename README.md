@@ -2,7 +2,8 @@
 
 **AIRONAUT** is a customizable, ESP32-S3-based indoor air quality monitor with a 3.5-inch touchscreen, RGB status LED, speaker and 3D-printed enclosure (**Hardware Rev. 1.0**). It's an independent, free-to-print DIY alternative to projects such as Project Aura.
 
-**Links:** [MakerWorld enclosure](MAKERWORLD_LINK_HERE)
+**Links:** [MakerWorld enclosure](https://makerworld.com/de/models/3672269-aironaut-diy-air-quality-monitor-esp32-s3#profileId-4216118) [Flash Website](https://markussus.github.io/Aironaut/)
+
 ## Features
 
 - **12 measurements/indicators:** PM1.0 / PM2.5 / PM4.0 / PM10, CO₂, VOC Index, NOx Index, HCHO, temperature, humidity, air pressure and a relative gas indicator.
@@ -35,7 +36,7 @@
 | M2×4 countersunk screws | 16 | Standard |
 | M2×6 countersunk screws | 3 | Standard |
 | M2×10 screws | 8 | Standard |
-| Printed AIRONAUT enclosure Rev. 1.0 | 1 set | [MakerWorld](MAKERWORLD_LINK_HERE) |
+| Printed AIRONAUT enclosure Rev. 1.0 | 1 set | [MakerWorld](https://makerworld.com/de/models/3672269-aironaut-diy-air-quality-monitor-esp32-s3#profileId-4216118) |
 
 **Optional:** compatible RTC backup battery. The printed set includes the gasket and rubber feet. The ESP32-S3 is already part of the Waveshare display board.
 
